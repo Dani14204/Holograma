@@ -42,7 +42,7 @@ import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
         // Cargar modelo FBX y aplicar textura
         const ObjRotacion = [];
         const fbxLoader = new FBXLoader();
-        fbxLoader.load('Shiba.fbx', (object) => {
+        fbxLoader.load('./Shiba.fbx', (object) => {
             object.scale.set(1.4, 1.4, 1.4); // Escalar si es necesario
             object.position.set(0, 0, 0);
             scene.add(object);
